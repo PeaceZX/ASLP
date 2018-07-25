@@ -1,0 +1,16 @@
+% speech signal.
+[s,fs] = audioread('C:\SpeechData\test\clean\FAI_812A.wav');
+N1 = length(s);
+figure; 
+set(0,'defaultfigurecolor','w');
+plot(1/fs:1/fs:N1/fs, s); grid;
+title('FAI_812A.wav'); xlabel('time');
+
+E1 = (1/N1)*sum(s.^2);
+
+
+figure; stem(1, E1, '+', 'LineWidth', 3); 
+title('Energy of Clean FAI_812A.wav');
+xlabel('Index'); ylabel('Energy Value');
+
+
