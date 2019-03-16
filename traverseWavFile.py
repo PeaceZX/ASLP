@@ -15,3 +15,5 @@ def traverse(f):
 
 path = r'C:\ALSP\SpeechData123qaz\Clean\test\clean'
 traverse(path)
+
+wewewewe
